@@ -4,6 +4,7 @@ M.ui = {
 }
 
 M.mappings = require "custom.mappings"
+M.options.clipboard = "unnammed"
 
 M.plugins = {
   user = {
