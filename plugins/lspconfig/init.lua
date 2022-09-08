@@ -4,7 +4,7 @@ local omnisharp_bin = vim.fn.stdpath("data") .. "\\mason\\packages\\omnisharp\\o
 local pid = vim.fn.getpid();
 
 local lspconfig = require "lspconfig"
-local servers = { "html", "cssls", "rust_analyzer", "pyright", "volar", "tsserver", "omnisharp"}
+local servers = { "html", "cssls", "rust_analyzer", "pyright", "volar", "tsserver", "omnisharp", "jsonls"}
 
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
